@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>𝐓𝐡𝐢𝐬 𝐢𝐬 𝐡𝐨𝐰 𝐢 𝐟𝐞𝐞𝐥</title>
+
+  <!-- Favicon e imagen para compartir -->
+  <link rel="icon" type="image/png" href="favicon.png">
+  <meta name="description" content="Una carta de desahogo con música para el alma.">
+  <meta property="og:title" content="This is how I feel">
+  <meta property="og:description" content="Una carta de desahogo.">
+  <meta property="og:image" content="/preview.png">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#d6c6b6">
+
+  <!-- Estilos -->
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('fondo.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Georgia', serif;
+      color: #3a2f2f;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .ornamento {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin: 20px 0;
+    }
+
+    .ornamento img {
+      max-width: 300px;
+      opacity: 0.9;
+    }
+
+    .contenido {
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 40px;
+      max-width: 700px;
+      margin: 20px;
+      text-align: center;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+
+    h1 {
+      font-size: 1.75rem;
+      font-style: italic;
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+
+    #spotify-container {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 999;
+      background: rgba(255, 255, 255, 0.7);
+      padding: 10px;
+      border-radius: 12px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    #spotify-container p {
+      font-size: 14px;
+      margin: 0 0 6px 0;
+      color: #555;
+    }
+
+    /* 📱 Ajustes para celular */
+    @media (max-width: 768px) {
+      .contenido {
+        padding: 20px;
+        margin: 20px 10px;
+      }
+
+      h1 {
+        font-size: 1.4rem;
+      }
+
+      p {
+        font-size: 0.95rem;
+      }
+
+      #spotify-container {
+        width: 90%;
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
+      }
+
+      #spotify-container iframe {
+        width: 100% !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Ornamento arriba -->
+  <div class="ornamento superior">
+    <img src="ornamento-top.png" alt="ornamento superior">
+  </div>
+
+  <!-- Contenido principal -->
+  <div class="contenido">
+    <h1><em>Carta de desahogo</em></h1>
+
+    <p>A veces me descubro buscando tu aprobación en medio de todos, como si tus ojos fueran el único lugar donde puedo ser yo mismo.</p>
+    <p>Me sorprendo a mí mismo callando verdades, moldeando mis palabras solo para no romper la imagen que puedas tener de mí. Cada gesto mío está atravesado por muchas preguntas, ¿Estará bien? ¿Le gustará?</p>
+    <p>Te pienso y mi pecho se aprieta, no por lo hermoso, sino por lo incierto que es. ¿Cómo puede alguien ser, al mismo tiempo, un refugio y un abismo? ¿Cómo puede doler tanto una presencia que apenas se roza con la mía?</p>
+    <p>Te amé y te amo en mis peores momentos, sin testigos. Solo vos y yo, y este silencio que cada vez se vuelve más denso. Y aunque nadie lo sepa, aunque nadie lo vea, vos lo sabés. Y eso es lo que más duele, que lo sepas y aún así no lo sostengas.</p>
+    <p>Por eso escribo. Porque hay palabras que ya no puedo tragar. Porque mi corazón necesita dejarse caer, aunque sea sobre esta carta, aunque solo sea para que el dolor tenga un lugar donde estar.</p>
+    <p>Nunca supe cómo llegar a tu corazón. Nunca entendí por qué cada intento mío parecía chocar contra una pared invisible. Y sin embargo, ahí estás, riéndote conmigo, diciéndome que me querías o me querés. Como si fuera tan fácil. Como si fuera suficiente.</p>
+    <p>Pero no lo era.</p>
+    <p>No soy suficiente. No para vos. Y me mata pensar que tal vez nunca lo fui. Que fui una compañía amable, un consuelo, un eco que te acariciaba el orgullo.</p>
+    <p>Y sin embargo, sigo acá, escribiendo con el corazón desbordado, con la garganta hecha nudos, con el recuerdo de cada risa tuya tatuada en mi memoria. Porque la vida, cruel, me enseñó a quererte tanto y a perderte más.</p>
+  </div>
+
+  <!-- Ornamento abajo -->
+  <div class="ornamento inferior">
+    <img src="ornamento-bottom.png" alt="ornamento inferior">
+  </div>
+
+  <!-- Reproductor de Spotify -->
+  <div id="spotify-container">
+    <p>Dale play a la música</p>
+    <iframe
+      src="https://open.spotify.com/embed/playlist/4hAUQyjeCHE5nRX47jQSUe?utm_source=generator&theme=0"
+      width="350" height="80" frameborder="0" allowtransparency="true"
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+    </iframe>
+  </div>
+
+</body>
+</html>
